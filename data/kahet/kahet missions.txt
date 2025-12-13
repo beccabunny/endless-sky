@@ -2061,7 +2061,7 @@ mission "Ka'het: Voice From The Past 0"
 		has "event: patir mystery timer"
 	to complete
 		never
-	npc assist save
+	npc save
 		government "Builder"
 		system "Fereti"
 		personality derelict waiting
