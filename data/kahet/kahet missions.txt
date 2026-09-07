@@ -5001,7 +5001,7 @@ mission "Ka'het: Cloud Probe 5"
 		payment 350000
 		event "ka'het: gaslining probe storm" 3
 		conversation
-			`Despite the improved safety of the Remnant cluster, the now-empty Swan silently stays on your wing during the descent. As you fly in the direction of the equator, the ice fields below you leave space for some patches of peculiar, deep red terrain. Occasionally, a dark Remnant outpost adorns the scene, surrounded by a perfect circle of melted ice. They are far too small, and you are moving far too fast, to make out any detail.`
+			`Despite having entered the relative safety of the Remnant cluster, the now-empty Swan silently stays on your wing during the descent. As you fly in the direction of the equator, the ice fields below you leave space for some patches of peculiar, deep red terrain. Occasionally, a dark Remnant outpost adorns the scene, surrounded by a perfect circle of melted ice. They are far too small, and you are moving far too fast, to make out any detail.`
 			`	You start to decelerate near your destination, but the Swan passes in front of you without appearing to slow down. Only when it is right above the target - another outpost, seemingly identical to every other one around here - it finally pitches up its nose, flexing its wings to maintain the balance and rotating its nose at the same time. If it is really less "alive" than other recent Remnant vehicles, you are having a hard time finding differences.`
 			`	"Thanks for the company, Captain," buzzes your radio. "We can handle this from here; logistics should authorize a payment shortly. May the Embers guide your efforts."`
 			choice
@@ -5011,7 +5011,7 @@ mission "Ka'het: Cloud Probe 5"
 					decline
 				`	"What should I do now?"`
 			`	A cheerful chant comes out of your radio. It speaks of the unpredictability of life, of the endless paths one may find, and of a hidden purpose unknown to us all. At least three or four voices complement each other, increasing further when the subject changes to the need to take action and not let life slide off you.`
-			`	After a few minutes, you infer that they do not know about the mission, and you go your own way. Soon enough, the screen informs you of a transfer of <payment> from Remnant Logistics coupled with a short message of appreciation.`
+			`	After a few minutes, you infer that they do not know about your mission, and you go your own way. Soon enough, the screen informs you of a transfer of <payment> from Remnant Logistics coupled with a short message of appreciation.`
 				decline
 			label mission
 			`	You are surprised to hear a loud, triumphant chant come out of your radio. It describes the bliss of finding life in unexpected places, beyond what one would consider possible. While the chorus has a very pleasing rhythm, you are oblivious to most of the events described in the song, excluding the discovery of past life in the Sol system.`
@@ -5052,7 +5052,7 @@ mission "Ka'het: Lightning in a Bottle 1"
 			label okay
 			`	"Ah, fairly well," she replies with a hint of perplexity. "Given the issues with the mission, we are all making best use of our flexible hours. More than usual, I admit, but it is a necessity right now."`
 			`	"What do you mean by flexible hours?" you ask.`
-			`	"Sleeping hours." She puts her hand on the back of her head, almost instinctively, before explaining. "One of the more common benefits of our symbionts is the capacity to control better our sleep cycle. Once one stays awake for longer than expected by the Circadian rhythm, their body starts being in excess of a number of chemicals, and in deficit of others. Our symbionts are capable of storing the former and administering the latter, at least for a time; then, at the right moment, the process is reversed and we go through the entire sleep we had put off for the previous days.`
+			`	"Sleeping hours." She puts her hand on the back of her head, almost instinctively, before explaining. "One of the more common benefits of our symbionts is the capacity to control better our sleep cycle. Once one stays awake for longer than expected by the Circadian rhythm, their body starts having an excess of a number of chemicals, and a deficit of others. Our symbionts are capable of storing the former and administering the latter, at least for a time; then, at the right moment, the process is reversed and we go through the entire sleep we had put off for the previous days.`
 			`	"This has multiple uses. As in this case, we can stay awake for as long as it takes for an emergency to get under control without excess fatigue. Alternatively, we can use it to adapt to different planets, where the length of the day-night is sometimes wildly different. I recall from your records that there are medicines used for similar purpose, but we prefer this approach. Though," she smiles, "I have been told that it can give a tendency to digress."`
 			label meaning
 			`	Taely walks toward one of your screens, eventually making it show the data of one of the Terns you recently deployed. "Ever since the first ion storm, the probe stationed in Meligara has become useless. Every tracker returns vast amounts of noise, so much that it is impossible to distinguish a Ka'het in that mess. If, as we suspect, there is a gap in its ion shielding, it is only a matter of time until we lose it. Today marks the fifth day we have spent trying to identify the issue."`
@@ -5081,9 +5081,9 @@ mission "Ka'het: Lightning in a Bottle 2"
 				`	(Use the opportunity to take a closer look at its sensor array.)`
 				`	(Go through the checklist and leave.)`
 					goto leave
-			`	The belly of the Tern is adorned with hundreds of small electronic boxes, slightly different from one another but all showing a clear Remnant origin. The dozen or so larger instruments are more interesting. It takes you a while to find an appropriate descriptor of their design language; eventually, you have to settle on "suspiciously Korath."`
+			`	The belly of the Tern is adorned with hundreds of small electronic boxes, slightly different from one another but all showing a clear Remnant origin. The dozen or so larger instruments are more interesting. It takes you a while to find an appropriate descriptor of their design language; eventually, you have to settle on "suspiciously Korath-like."`
 			label leave
-			`	Though Taely's handwriting turns out to be uniquely hard to understand, you make it to the end, eventually. A cracking sound from the hull signals you that an ion storm is starting. After a brief moment, you decide to leave the Tern to its fate and watch what happens. You spot tiny blue sparkles all around the atmosphere, briefly illuminating the dark scene. Deep below you, far brighter bolts are barely visible through the clouds. Among them a dark, solid outline suddenly becomes visible.`
+			`	Though Taely's handwriting turns out to be uniquely hard to understand, you make it to the end, eventually. A cracking sound from the hull signals to you that an ion storm is starting. After a brief moment, you decide to leave the Tern to its fate and watch what happens. You spot tiny blue sparkles all around the atmosphere, briefly illuminating the dark scene. Deep below you, far brighter bolts are barely visible through the clouds. Among them a dark, solid outline suddenly becomes visible.`
 			`	Your ship's tracker starts whining a desperate whistle. Thousands of signals appear in a matter of seconds, beyond the range of your radar. Their communication is garbled, but your ship tentatively classifies it as "Builder." As the storm rages on, you notice on one of your screens the tracking data from the Tern: the pattern of what the Remnant classified as noise is remarkably similar to that of the signals now reaching you.`
 			choice
 				`	(Staying was a bad idea. Move out and return to Remnant space.)`
@@ -5141,7 +5141,7 @@ mission "Ka'het: Lightning in a Bottle 3A"
 		event "Ka'het don't spawn in Ritilas"
 		conversation
 			`At the time you arrive, the fleet appears to be made only of two ships - a Peregrine, the back of which is encased in a confusingly high amount of scaffolding, and a Swan. You are almost hit by a Remnant descending on a rope: once you take a few steps back and glance around, you notice the temporary structure has an extensive pulley system, letting them move easily between different floors. You find Taely busy managing the rest of the Peregrine team.`
-			`	"<first>, we are almost ready to go," she signs at last. "After searching through the thousands of Builder probes in your data, we found a few which have drifted into a less turbulent part of <planet>'s atmosphere. Calm is relative, but it should be enough for our tools to capture it." Another Remnant calls for her attention, and you gather she has to return to the preparations. "The other Peregrine will return from her previous mission in a matter of seconds now, already equipped for the job. Are you ready, <first>?"`
+			`	"<first>, we are almost ready to go," she signs at last. "After searching through the thousands of Builder probes in your data, we found a few which have drifted into a calmer part of <planet>'s atmosphere. 'Calmer' is relative, but it should be enough for our tools to capture it." Another Remnant calls for her attention, and you gather she has to return to the preparations. "The other Peregrine will return from her previous mission in a matter of seconds now, already equipped for the job. Are you ready, <first>?"`
 			choice
 				`	"Of course."`
 					accept
