@@ -5225,7 +5225,7 @@ mission "Ka'het: Lightning in a Bottle 4"
 			label "ka'het killed for the cloud probe"
 			`Like two enormous birds of prey, the Peregrines have captured the Builder probe with a set of claws mounted beneath their bodies. You receive the communications of a group of Remnant in the middle of an extravehicular activity. Half of them work on securing the lower section of the craft, seemingly having cooled down; at the same time, you see the other few distribute along the balloon's various tethers. You see a flash. The balloon soars upward while its payload remains in the clamps of the Peregrine.`
 			`	"Thank you for getting them off our tail, <first>," Taely radios. "We have what we needed. Plus, while I don't know how long our Tern will keep together, it seems to have survived." The Swan makes a reappearance in your tracking screen, holding well above you in the atmosphere.`
-			`	"Oddly enough, we have just recorded the Builder balloon implode, rather than burst, once it was free. We were able to catch a few fragments for later study before it fell too deeply into the atmosphere." Soon, the Peregrines signal that they are ready to leave for <planet>.`
+			`	"Oddly enough, we have just recorded the Builder balloon imploding, rather than bursting, once it was free. We were able to catch a few fragments for later study before it fell too deeply into the atmosphere." Soon, the Peregrines signal that they are ready to leave for <planet>.`
 				accept
 
 			label "ka'het killed early"
@@ -5233,7 +5233,7 @@ mission "Ka'het: Lightning in a Bottle 4"
 			scene "scene/builder cloud probe"
 			`	Soon enough one of the Peregrines takes the initiative to approach the alien spacecraft. It pitches up to reveal two enormous claws mounted beneath its body. It closes the distance with the target bit by bit, then makes a swift movement to catch its prey before the wind changes. It succeeds.`
 			`	You receive the communications of a group of Remnant in the middle of an extravehicular activity. Half of them work on securing the lower section of the craft, it seemingly having cooled down; at the same time, you see the other few distribute along the balloon's various tethers. You see a flash: the balloon flies away free, while the payload stays in the clamps of the Peregrines.`
-			`	"We have what we needed, <first>," Taely states through the ship's radio. "Oddly enough, we have just recorded the Builder balloon implode, rather than burst, once it was free. We were able to catch a few fragments for later study before it fell too deeply into the atmosphere." Soon, the Peregrines signal that they are ready to leave for <planet>.`
+			`	"We have what we needed, <first>," Taely states through the ship's radio. "Oddly enough, we have just recorded the Builder balloon imploding, rather than bursting, once it was free. We were able to catch a few fragments for later study before it fell too deeply into the atmosphere." Soon, the Peregrines signal that they are ready to leave for <planet>.`
 				accept
 	on complete
 		event "Ka'het spawn in Ritilas"
