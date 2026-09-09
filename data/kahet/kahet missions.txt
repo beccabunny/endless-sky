@@ -4898,7 +4898,7 @@ mission "Ka'het: Cloud Probe 1"
 	on offer
 		conversation
 			`Glancing around the landing zone, you spot two Remnant walking at a fast pace toward your ship; eventually, you recognize them as Taely, still wearing her flight helmet, and Torza. "We have been looking for you, Captain," he begins. He gestures toward the ship they arrived from: a Swan, carrying four Terns below its massive wings. "Have you been in the Graveyard recently?"`
-			`	The three of you take a seat in a starport bench. Torza seems to be concerned about the amount of data that they possess on the inhabitants in the Graveyard. "Our current surveillance methods are limited," he continues, "especially around the Ka'het. One must stay cloaked at all times in order to survive." Taely intervenes with some technical details - of the compromises between ramscoop requirements and designing for optimal cloaking, and how running them continuously will inevitably clog them over time. While you do not recognize every sign she makes, the exploding motion she makes with her hands makes the consequences clear.`
+			`	The three of you take a seat on a starport bench. Torza seems to be concerned about the amount of data that they possess on the inhabitants in the Graveyard. "Our current surveillance methods are limited," he continues, "especially around the Ka'het. One must stay cloaked at all times in order to survive." Taely intervenes with some technical details - of the compromises between ramscoop requirements and designing for optimal cloaking, and how running them continuously will inevitably clog them over time. While you do not recognize every sign she makes, the exploding motion she makes with her hands makes the consequences clear.`
 			`	"But if we cannot make them undetectable, perhaps we can make them unreachable. We have recently learned how to replicate extremely precise trackers," she states, "enough to record orbital vehicles from deep inside an atmosphere. The idea was raised to take a Tern, mount these optics inside of it, and leave it permanently inside a Graveyard gas giant."`
 			choice
 				`	"Will that hide them from the Ka'het?"`
@@ -4957,7 +4957,7 @@ mission "Ka'het: Cloud Probe 3"
 	to offer
 		has "Ka'het: Cloud Probe 2: done"
 	on complete
-		dialog "Another Tern drops from its mothership, falling through the bright clouds. Some of the orbiting debris enters the atmosphere around the same time, leaving streaks of plasma around the trail of the Tern. While you glance at the spectacle, the map signals you the next stop - Meligara, part of the Ritilas system."
+		dialog "Another Tern drops from its mothership, falling through the bright clouds. Some of the orbiting debris enters the atmosphere around the same time, leaving streaks of plasma around the trail of the Tern. While you gaze at the spectacle, the map signals you the next stop - Meligara, part of the Ritilas system."
 	npc accompany save
 		government "Remnant"
 		ship "Swan" "Serene Pillar Lost"
@@ -5040,7 +5040,7 @@ mission "Ka'het: Lightning in a Bottle 1"
 		dialog `To your surprise, you hear your commlink chirping once again. It is a message from Taely, asking you to meet up with her in <planet>'s starport as soon as you can. Though she does not specify the reason, the subject of the communication reads "Gas probe trouble."`
 	on complete
 		conversation
-			`"We have made a grave mistake," Taely begins, stepping into the <ship>'s hatch. When she turns around, you notice a large, swollen leathery mass peeking behind her neck, almost like an unworn hood. You realize that her movements are slightly jittery, though barely enough to be perceivable. "I am glad you were in this region already, <first>, because we need to act. Evidently, somewhere in our construction process - or even in the design - something slipped beyond our watch."`
+			`"We have made a grave mistake," Taely begins, stepping into the <ship>'s hatch. When she turns around, you notice a large, swollen leathery mass peeking from behind her neck, almost like an unworn hood. You realize that her movements are slightly jittery, though barely enough to be perceivable. "I am glad you were in this region already, <first>, because we need to act. Evidently, somewhere in our construction process - or even in the design - something slipped beyond our watch."`
 			choice
 				`	"What do you mean?"`
 					goto meaning
@@ -5121,7 +5121,7 @@ mission "Ka'het: Lightning in a Bottle 2"
 				`	"What are you planning?"`
 			`	"There are two reasons I can think of that would make a probe start talking during a storm," she replies. "One is that it is about to run out of energy and wants to call home, which is possible. But there is also a particular piece of technology which could cause this - a generator that captures useful energy from the ion storm. We believe the Builders possessed it, though we have found no hard evidence yet." She steps down into the spaceport, seemingly looking for someone.`
 			`	"Why do you believe that?" you ask, following her.`
-			`	"Hundreds of sizable military hold points were once stationed in every Builder system. Though they have long become worthless debris, if that, we found and translated some of their inventory. Understanding an extinct, alien language is only reliable to a point, of course. All the more reason to capture one of those Builder crafts."`
+			`	"Hundreds of sizable military hold points were once stationed in every Builder system. Though they have long become worthless debris, if that, we found and translated some of their inventory. Understanding an extinct, alien language is only reliable up to a point, of course. All the more reason to capture one of those Builder crafts."`
 			`	She calls the attention of a spaceport worker to ask for a list of expected traffic. She quickly scrolls through the datapad, then turns to you again. "I can ready two Peregrines in the spaceport in a few hours with a soft capture kit. Offhand, I do not believe we can outfit them with quite enough propellant for a round trip to Meligara - at least, not without stopping to ramscoop in the Graveyard. A Swan tanker should solve this, however." After some more napkin math, she signs that she has to go now to be ready in time.`
 			choice
 				`	"See you in a few hours then."`
@@ -5140,7 +5140,7 @@ mission "Ka'het: Lightning in a Bottle 3A"
 	on offer
 		event "Ka'het don't spawn in Ritilas"
 		conversation
-			`At the time you arrive, the fleet appears to be made only of two ships - a Peregrine, the back of which is encased in a confusingly high amount of scaffolding, and a Swan. You are almost hit by a Remnant descending on a rope: once you take a few steps back and glance around, you notice the temporary structure has an extensive pulley system, letting them move easily between different floors. You find Taely busy managing the rest of the Peregrine team.`
+			`At the time you arrive, the fleet appears to be made only of two ships - a Peregrine, the back of which is encased in a confusingly high amount of scaffolding, and a Swan. You are almost hit by a Remnant descending on a rope; once you take a few steps back and glance around, you notice the temporary structure has an extensive pulley system, letting them move easily between different floors. You find Taely busy managing the rest of the Peregrine team.`
 			`	"<first>, we are almost ready to go," she signs at last. "After searching through the thousands of Builder probes in your data, we found a few which have drifted into a calmer part of <planet>'s atmosphere. 'Calmer' is relative, but it should be enough for our tools to capture it." Another Remnant calls for her attention, and you gather she has to return to the preparations. "The other Peregrine will return from her previous mission in a matter of seconds now, already equipped for the job. Are you ready, <first>?"`
 			choice
 				`	"Of course."`
@@ -5207,7 +5207,7 @@ mission "Ka'het: Lightning in a Bottle 4"
 			choice
 				`	"Is that one of yours?"`
 				`	(Warm up my weapons.)`
-			`	Right as the object disappears, a three-letter message finally reaches you through the radio: "E. M. P."`
+			`	Right as the object disappears, a three-letter message finally reaches you through the radio: "EMP"`
 			`	The electric burst hits you a few seconds later; it seems to have dissipated somewhat, but it is enough to temporarily garble your communicator. A check of the tracking screen shows the Tern unscathed by the strike, but the aft of the Builder probe is now showing a worrying red glow.`
 			`	You try to contact the Remnant, but the arrival of another EMP prevents you from doing so. For their part, one of the Peregrines has taken the initiative to approach the alien spacecraft.`
 			choice
