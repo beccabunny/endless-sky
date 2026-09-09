@@ -4899,19 +4899,19 @@ mission "Ka'het: Cloud Probe 1"
 		conversation
 			`Glancing around the landing zone, you spot two Remnant walking at a fast pace toward your ship; eventually, you recognize them as Taely, still wearing her flight helmet, and Torza. "We have been looking for you, Captain," he begins. He gestures toward the ship they arrived from: a Swan, carrying four Terns below its massive wings. "Have you been in the Graveyard recently?"`
 			`	The three of you take a seat on a starport bench. Torza seems to be concerned about the amount of data that they possess on the inhabitants in the Graveyard. "Our current surveillance methods are limited," he continues, "especially around the Ka'het. One must stay cloaked at all times in order to survive." Taely intervenes with some technical details - of the compromises between ramscoop requirements and designing for optimal cloaking, and how running them continuously will inevitably clog them over time. While you do not recognize every sign she makes, the exploding motion she makes with her hands makes the consequences clear.`
-			`	"But if we cannot make them undetectable, perhaps we can make them unreachable. We have recently learned how to replicate extremely precise trackers," she states, "enough to record orbital vehicles from deep inside an atmosphere. The idea was raised to take a Tern, mount these optics inside of it, and leave it permanently inside a Graveyard gas giant."`
+			`	"But if we cannot make them undetectable, perhaps we can make them unreachable. We have recently learned how to replicate extremely precise trackers," she states, "enough to record orbital vehicles from deep inside an atmosphere. The idea was raised to take a Tern, mount these optics inside of it, and leave it permanently inside a Graveyard gas giant." He indicates again, one by one, the four drones clamped beneath the Swan.`
 			choice
 				`	"Will that hide them from the Ka'het?"`
 				`	"Why was that not a concern previously?"`
 					goto concern
-				`	"Why the Swan?"`
+				`	"Why the Swan? I could carry them on my own."`
 					goto swan
 			`	"In our experience, it will not," Torza replies, sharing a somber glance with the other prefect. "But the Ka'het cannot visit gas planets, as far as we can tell. If they study them, they will learn of the Terns, but the ships should be far beyond their reach."`
 				goto swan
 			label concern
 			`	"It has been a point of concern for decades now." Torza looks slightly miffed by your question. "If this information gap is still unresolved, it is only because our attempts at filling it have failed."`
 			label swan
-			`	Taely continues the conversation. "You might have noticed that neither of our carriers are capable of cloaking. Even if filled with propellant, an Ibis would have to stop, vulnerable, to refuel in the middle of the Graveyard; the Swan is inherently capable of doing the round trip without a ramscoop, using a Scram drive and leaving some fuel for an escort. Which would be you, in this case."`
+			`	Taely continues the conversation. "We could call it a trial-by-fire, I guess. You might have noticed that neither of our carriers are capable of cloaking. Even if filled with propellant, an Ibis would have to stop, vulnerable, to refuel in the middle of the Graveyard; the Swan is inherently capable of doing the round trip without a ramscoop, using a Scram drive and leaving some fuel for an escort. Which would be you, in this case."`
 			choice
 				`	"I would be happy to."`
 				`	"Sorry, but I am too busy right now."`
@@ -5001,7 +5001,7 @@ mission "Ka'het: Cloud Probe 5"
 		payment 350000
 		event "ka'het: gaslining probe storm" 3
 		conversation
-			`Despite having entered the relative safety of the Remnant cluster, the now-empty Swan silently stays on your wing during the descent. As you fly in the direction of the equator, the ice fields below you leave space for some patches of peculiar, deep red terrain. Occasionally, a dark Remnant outpost adorns the scene, surrounded by a perfect circle of melted ice. They are far too small, and you are moving far too fast, to make out any detail.`
+			`Despite having entered the relative safety of the Remnant cluster, the now-empty Swan silently stays on your wing during the descent. As you fly in the direction of the equator, the ice fields below you leave space for some patches of peculiar, deep red terrain. Occasionally, a dark Remnant outpost adorns the scene, surrounded by a perfect circle of melted ice. Far too small, and moving far too fast below you, to make out any detail.`
 			`	You start to decelerate near your destination, but the Swan passes in front of you without appearing to slow down. Only when it is right above the target - another outpost, seemingly identical to every other one around here - it finally pitches up its nose, flexing its wings to maintain the balance and rotating its nose at the same time. If it is really less "alive" than other recent Remnant vehicles, you are having a hard time finding differences.`
 			`	"Thanks for the company, Captain," buzzes your radio. "We can handle this from here; logistics should authorize a payment shortly. May the Embers guide your efforts."`
 			choice
@@ -5063,7 +5063,7 @@ mission "Ka'het: Lightning in a Bottle 1"
 					goto how
 			`	"Maybe. If it is still able to float in the atmosphere after you are done with it, it might be able to survive through a few more storms before its avionics arc and short-circuit."`
 			label how
-			`	She hands you a checklist. "I have written down a simple enough sampling procedure for the ion shielding. Still, you will have to send it a command to resurface higher once you are in the system - at the altitude it is staying now, the winds would leave you no chance of rendezvous. And be quick: we cannot know for how long that poor Tern can keep it together in this state."`
+			`	She hands you a checklist. "I have written down a simple enough sampling procedure for the ion shielding. Still, you will have to send it a command to climb once you are in the system - at the altitude it is staying now, the winds would leave you no chance of rendezvous. And be quick: we cannot know for how long that poor Tern can keep it together in this state."`
 
 mission "Ka'het: Lightning in a Bottle 2"
 	landing
