@@ -36,8 +36,9 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 #include "MainPanel.h"
 #include "MenuPanel.h"
 #include "Panel.h"
+#include "PilotProfile.h"
 #include "PlayerInfo.h"
-#include "Plugins.h"
+#include "PluginManager.h"
 #include "Preferences.h"
 #include "PrintData.h"
 #include "Random.h"
@@ -168,7 +169,7 @@ int main(int argc, char *argv[])
 	try {
 		// Load plugin settings and preferences before game data.
 		Preferences::Load();
-		Plugins::LoadSettings();
+		PluginManager::LoadSettings();
 
 		TaskQueue queue;
 
@@ -222,6 +223,7 @@ int main(int argc, char *argv[])
 
 			// Reference check the universe, as known to the player. If no player found,
 			// then check the default state of the universe.
+			PilotProfile::LoadProfiles();
 			if(!player.LoadRecent())
 				GameData::CheckReferences();
 			cout << "Parse completed with " << (hasErrors ? "at least one" : "no") << " error(s)." << endl;
@@ -279,7 +281,7 @@ int main(int argc, char *argv[])
 	Preferences::Set("fullscreen", GameWindow::IsFullscreen());
 	Screen::SetRaw(GameWindow::Width(), GameWindow::Height(), true);
 	Preferences::Save();
-	Plugins::Save();
+	PluginManager::Save();
 
 	Audio::Quit();
 	GameWindow::Quit();
@@ -328,6 +330,10 @@ void GameLoop(PlayerInfo &player, TaskQueue &queue, const Conversation &conversa
 	auto ProcessEvents = [&menuPanels, &gamePanels, &player, &cursorTime, &toggleTimeout, &debugMode, &isDebugPaused,
 			&isFastForward]
 	{
+		const Preferences::FastForwardCapsLockSync fastforwardCapsLockSync = Preferences::GetFastForwardCapsLockSync();
+		const bool fastForwardSyncToCapsLock = fastforwardCapsLockSync == Preferences::FastForwardCapsLockSync::ALWAYS
+			|| (fastforwardCapsLockSync == Preferences::FastForwardCapsLockSync::DEFAULT
+				&& Command(SDLK_CAPSLOCK).Has(Command::FASTFORWARD));
 		SDL_Event event;
 		while(SDL_PollEvent(&event))
 		{
@@ -384,7 +390,7 @@ void GameLoop(PlayerInfo &player, TaskQueue &queue, const Conversation &conversa
 			}
 			else if(event.type == SDL_KEYDOWN && !event.key.repeat
 					&& (Command(event.key.keysym.sym).Has(Command::FASTFORWARD))
-					&& !Command(SDLK_CAPSLOCK).Has(Command::FASTFORWARD))
+					&& !fastForwardSyncToCapsLock)
 			{
 				isFastForward = !isFastForward;
 			}
@@ -392,7 +398,7 @@ void GameLoop(PlayerInfo &player, TaskQueue &queue, const Conversation &conversa
 
 		// Special case: If fastforward is on capslock, update on mod state and not
 		// on keypress.
-		if(Command(SDLK_CAPSLOCK).Has(Command::FASTFORWARD))
+		if(fastForwardSyncToCapsLock)
 			isFastForward = SDL_GetModState() & KMOD_CAPS;
 	};
 
@@ -636,9 +642,8 @@ void PrintHelp()
 	cerr << "    --nomute: don't mute the game while running tests." << endl;
 	cerr << "    --rng-seed <seed>: every time the pseudo-random number generator is seeded,"
 		" it will be given this value." << endl;
-	cerr << "    --tq-threads: sets the number of threads used for the internal queue of tasks."
-		" Not specifying this will use a default depending on your system. This is only useful for debugging."
-		" Has to be at least 1." << endl;
+	cerr << "    --tq-threads <number>: sets the number of threads used for the internal queue of tasks."
+		" Not specifying this will use a default depending on your system. Has to be at least 1." << endl;
 	PrintData::Help();
 	cerr << endl;
 	cerr << "Report bugs to: <https://github.com/endless-sky/endless-sky/issues>" << endl;
